@@ -7,6 +7,8 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 
+from dotenv import load_dotenv
+load_dotenv()
 import numpy as np
 np.set_printoptions(suppress=True)
 np.set_printoptions(precision=16)
@@ -42,9 +44,9 @@ def update_cluster():
 def elaborate_data():
 
     cloudinary.config( 
-        cloud_name = "dkfufjo9o", 
-        api_key = "164647762496236", 
-        api_secret = "7-i96BfLItBw58yNfSY74dI95o0" 
+        cloud_name = os.getenv("CLOUDINARY_CLOUD_NAME"), 
+        api_key = os.getenv("CLOUDINARY_API_KEY"), 
+        api_secret = os.getenv("CLOUDINARY_API_SECRET") 
     )
 
     update_cluster()

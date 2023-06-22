@@ -30,9 +30,9 @@ def upload_Image(path):
     try:
 
         cloudinary.config( 
-            cloud_name = "dkfufjo9o", 
-            api_key = "164647762496236", 
-            api_secret = "7-i96BfLItBw58yNfSY74dI95o0" 
+            cloud_name = os.getenv("CLOUDINARY_CLOUD_NAME"), 
+            api_key = os.getenv("CLOUDINARY_API_KEY"), 
+            api_secret = os.getenv("CLOUDINARY_API_SECRET") 
         )
 
         conn = pg.connect(
@@ -41,7 +41,7 @@ def upload_Image(path):
             user=os.getenv("DB_USER"),
             password=os.getenv("DB_PASSWORD")
         )
-
+ 
         cur = conn.cursor()        
         uuids = uuid.uuid4()
         uuids = str(uuids)
