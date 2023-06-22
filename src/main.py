@@ -3,13 +3,13 @@ from utils.functions import logger, get_images,get_faces_clustered , new_face, c
 from utils.clustering import clusterFaces
 from sklearn.neighbors import NearestNeighbors
 from model.Facenet512 import loadModel
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 import numpy as np
 np.set_printoptions(suppress=True)
 np.set_printoptions(precision=16)
-# aumenta la precisione dei numeri a virgola mobile
-
-
 from deepface import DeepFace
 import os
 
@@ -41,6 +41,12 @@ def update_cluster():
 
 def elaborate_data():
 
+    cloudinary.config( 
+        cloud_name = "dkfufjo9o", 
+        api_key = "164647762496236", 
+        api_secret = "7-i96BfLItBw58yNfSY74dI95o0" 
+    )
+
     update_cluster()
 
     df : pd.DataFrame = get_images() 
@@ -51,7 +57,8 @@ def elaborate_data():
     for index, row in df.iterrows():
 
         try:
-            face_objs = DeepFace.extract_faces(row['path'], detector_backend = backends, target_size = target_size , verbose = False)
+            path = cloudinary.api.resource("reface/"+row["path"])
+            face_objs = DeepFace.extract_faces(path["url"], detector_backend = backends, target_size = target_size , verbose = False)
 
         except Exception as e:
             print(f"Error: {e}")
