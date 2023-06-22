@@ -1,0 +1,48 @@
+We have 306 images to elaborate
+Elaborated 1/306 images
+Elaborated 30/306 images
+Elaborated 60/306 images
+Elaborated 90/306 images
+Elaborated 120/306 images
+Elaborated 150/306 images
+Elaborated 180/306 images
+Elaborated 210/306 images
+Elaborated 240/306 images
+Elaborated 270/306 images
+Elaborated 300/306 images
+Elaborated 306/306 imagesWe have 449 faces to cluster
+We have 0 clusters
+We have 449 faces to cluster
+Il valore di eps è: 17.199999999999974
+Numero di cluster trovati: 11
+We have 388 faces clustered
+Elaboration completed
+Cluster defined
+
+22 June 2023, 12:06 PM: We have 10 clusters to update
+22 June 2023, 12:07 PM: We have 388 faces to use
+22 June 2023, 12:07 PM: Updated cluster e2a0d1a8-8890-46eb-83ea-6e9303e986f4
+22 June 2023, 12:07 PM: Updated cluster 0d2c0a74-c945-4ad2-aca7-46e896414339
+22 June 2023, 12:07 PM: Updated cluster 97f551ac-0e5e-4cad-9bd9-713d971f5509
+22 June 2023, 12:07 PM: Updated cluster 2c87ee46-e43f-462d-8ea1-d06f507c3710
+22 June 2023, 12:07 PM: Updated cluster e1b8cc1f-3600-493d-bf01-b95605db92d6
+22 June 2023, 12:07 PM: Updated cluster 00666f29-2014-40f0-b03e-df8ea4fd900f
+22 June 2023, 12:07 PM: Updated cluster a865cb2a-fb3c-4ede-ae5b-077a1073ccfc
+22 June 2023, 12:07 PM: Updated cluster 0abaf101-0c88-448e-aaad-23fb408b62c3
+22 June 2023, 12:07 PM: Updated cluster 674178fa-5b39-489b-ad07-a58dfc6affdf
+22 June 2023, 12:07 PM: Updated cluster ee4dcf6b-5d2c-4f97-a715-ab0556bf6c2f
+22 June 2023, 12:07 PM: Updated all the clusters
+22 June 2023, 12:07 PM: We have 0 images to elaborate
+22 June 2023, 12:07 PM: We have 61 faces to cluster
+22 June 2023, 12:07 PM: We have 10 clusters
+22 June 2023, 12:07 PM: We have clusters, we are going to check if we can add some faces to them
+22 June 2023, 12:07 PM: The face is close to a cluster, we are going to add it
+22 June 2023, 12:07 PM: The face is close to a cluster, we are going to add it
+22 June 2023, 12:07 PM: The face is close to a cluster, we are going to add it
+22 June 2023, 12:07 PM: The face is close to a cluster, we are going to add it
+22 June 2023, 12:07 PM: The face is close to a cluster, we are going to add it
+22 June 2023, 12:07 PM: The face is close to a cluster, we are going to add it
+22 June 2023, 12:07 PM: The face is close to a cluster, we are going to add it
+22 June 2023, 12:07 PM: The face is close to a cluster, we are going to add it
+22 June 2023, 12:07 PM: The face is close to a cluster, we are going to add it
+22 June 2023, 12:07 PM: We have 52 faces to cluster

@@ -1,0 +1,34 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model image {
+  id          String   @id @default(uuid())
+  path        String   
+  analized    Boolean  @default(false)
+  faces       face[]
+}
+
+model face {
+  id          String   @id @default(uuid())
+  embedded    Float
+  image       image    @relation(fields: [imageId], references: [id])
+  imageId     String
+  cluster     cluster? @relation(fields: [clusterId], references: [id])
+  clusterId   String?
+}
+
+model cluster {
+  id          String   @id @default(uuid())
+  name        String?
+  embedded    String
+  faces       face[]
+}
